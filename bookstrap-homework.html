@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Noto+Sans+TC|Saira+Semi+Condensed&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <title>MARVEL</title>
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+
+        }
+
+        body {
+            background: #eee;
+            font-family: 'Noto Sans TC', sans-serif, 'Saira Semi Condensed', sans-serif, 'Inconsolata', monospace;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .row {
+            margin-left: -30px;
+            margin-right: -30px;
+        }
+
+        div[class*=col-] {
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
+        nav {
+            z-index: 10;
+            width: 100vw;
+            position: fixed;
+        }
+
+        nav .mr-auto {
+            margin-left: auto !important;
+        }
+
+        .nav-bacc {
+            background-color: rgb(158, 158, 158);
+        }
+
+        .logo-size {
+            width: 50px;
+            height: 50px;
+            /* background-image:url("/02-image/Rice ball logo v2 -png.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center; */
+        }
+
+        .banner {
+            width: 100vw;
+            height: calc(100vh - 66px);
+        }
+
+        .product .container {
+            padding-top: 30px;
+            background-color: rgb(205, 215, 236);
+        }
+
+        .col-gold-lg {
+            float: left;
+            position: relative;
+            min-height: 1px;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 61.8%;
+            flex: 0 0 61.8%;
+        }
+
+        .col-gold-sm {
+            float: left;
+            position: relative;
+            min-height: 1px;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 38.2%;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-container .swiper-wrapper {
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            height: 100%;
+        }
+
+        .footer-container {
+            width: 100vw;
+            font-size: 16px;
+            color: #000;
+            text-align: center;
+            background-color: rgb(221, 223, 223);
+        }
+
+        @media (min-width: 1280px) {
+            .container {
+                max-width: 80%;
+            }
+        }
+
+        @media (min-width: 1920px) {
+            .container {
+                max-width: 1800px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark nav-bacc">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <img class="logo-size" src="/02-image/MARVEL.jpg" alt="">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <!-- <li class="nav-item active">
+                        <a class="nav-link" href="#about">故事線<span class="sr-only">(current)</span></a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">故事線</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product">人物介紹</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown button
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">本丸</a>
+                                        <a class="dropdown-item" href="#">飲料</a>
+                                    </div>
+                                </button>
+
+                            </div>
+                        </div>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#infomation">籌備中</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li> -->
+                </ul>
+                <!-- <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+    <!-- Swiper -->
+    <div class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(../02-image/MARVEL-03.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(../02-image/avengers-02.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(../02-image/avengers-03.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(../02-image/avengers-04.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(../02-image/avengers-05.jpg)"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-white"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+        </div>
+    </div>
+
+    <div class="py-3"></div>
+
+    <!-- Swiper JS -->
+    <script src="../dist/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            effect: 'fade',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="d-md-none col-12">
+                    <img class="w-100" src="" alt="">
+                </div>
+                <div class="col-gold-lg col-12 texe-justify order-sm-0">
+                    <h5>從漫威2008年發行第一部電影《鋼鐵人》開始，到現在2019年為止，已經有超過20部與《復仇者聯盟3：無限之戰》、《復仇者聯盟4：終局之戰》時間軸環環相扣。</h5>
+                    <p>●美國隊長1：弱雞美隊因為參加科學家的實驗變成超肌肉男，跑去打敗九頭蛇，紅骷髏被空間寶石傳送消失，史蒂芬怕墜機到都市讓飛機衝撞冰川被冰凍，睡了70年才醒來。</p>
+                    <p>●鋼鐵人1：超有錢軍火商史塔克在被綁架期間自行研發第一代鋼鐵人，回來後洗心革面不想繼續賣軍火，改頭換面後在記者會上說 :「I am Iron Man」。</p>
+                    <p>●鋼鐵人2：鋼鐵人史塔克因為胸口的反應爐的關係讓身體慢性中毒，好加在老爸早就發現了新元素，輾轉使用新元素當反應爐後，身體變健康又打敗壞人。</p>
+                    <p>●雷神索爾：索爾被老爸趕出阿斯嘉還讓他舉不起來神之鎚，後來經過重重考驗後又舉起錘子了！</p>
+                    <p>●復仇者聯盟1：索爾弟弟洛基跑來地球用心靈寶石迷惑一堆人幫他幹壞事，開了蟲洞要讓外星人進攻，但是英雄們很團結（尤其鋼鐵人抱核彈衝進蟲洞），成功擊退外星人。</p>
+                    <p>●鋼鐵人3：史塔克在《復聯1》裡炸了蟲洞後恐慌症發作，半夜不睡覺做了一堆盔甲，後來頓悟他不用穿上鋼鐵盔甲也可以是鋼鐵人，就在小辣椒面前把盔甲通通炸了。</p>
+                    <p>●雷神2：索爾的女朋友珍不小心穿越傳送門，跑去阿斯嘉的「乙太封印地」然後被附身，壞人得到乙太後結合為一體想要佔領地球，但又再一次被打敗了。</p>
+                    <p>●美國隊長2：美國隊長史蒂芬與酷寒戰士打了一架之後發現酷寒戰士是老朋友巴奇，不忍殺他，決定讓他和自己一起掉到河裡。</p>
+                    <p>●復仇者聯盟2：奧創紀元：浩克班納與鋼鐵人史塔克作出了「奧創」，結果奧創覺得人類應該被消滅，但最後被復仇者聯盟消滅了。</p>
+                    <p>●美國隊長3：鋼鐵人史塔克跟美國隊長早在復聯1時就吵過架，這次因為政府要簽的條款隊長不想簽，然後又因為酷寒戰士兩派人馬打起來，蜘蛛人趁勢趕緊出來露個臉。</p>
+                    <p>●雷神2：諸神黃昏：奧丁過世後，海拉回來了，海拉一手把索爾的槌子捏爆，而後跌進薩卡星，遇到浩克，最後索爾跟弟弟、女武神、浩克一起回去把阿斯嘉和姊姊一起消滅。</p>
+                    <p>●復仇者聯盟3：無限之戰：薩諾斯跟手下到處去搜集無限寶石，大家拼了命阻止還是被他蒐集完了，一彈指宇宙一半的人都變灰燼，薩諾斯看著夕陽微笑。</p>
+                    <p>●復仇者聯盟4：終局之戰：五年後，蟻人從量子隧道出來，於是英雄們決定來「時間旅行」，那些回來的英雄們集結起來後，奇異博士說的『一千四百萬分之一的機會』終於成功。</p>
+                </div>
+                <div class="col-4 col-gold-sm">
+                    <img class="w-100" src="../02-image/avengers all.jpg" alt="Story">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="py-3"></div>
+
+    <div class="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-12">
+                    <div class="card mb-3">
+                        <img src="../02-image/iron man.jpg" class="card-img-top" alt="Iron Man">
+                        <div class="card-body">
+                            <h5 class="card-title">鋼鐵人</h5>
+                            <p class="card-text">
+                                本名安東尼·愛德華·史塔克（AnthonyEdwardStark），暱稱東尼·史塔克（TonyStark），他是位發明家，冒險家，百萬富豪，花花公子，還是愛國瘋子。父親為著名的企業兼發明家霍華·史塔克。
+                                15歲時進入麻省理工學院電子工程學系，17歲畢業於麻省理工學院，18歲那年浪子回頭，19歲以最高分成績獲得雙碩士學位。21歲時他的父母被九頭蛇所殺，死於車禍。在IGN於2011年評出的100漫畫英雄中鋼鐵人排名第12位。在2012年的「50大復仇者」名單中排名第三。
+                            </p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-12">
+                    <div class="card mb-3">
+                        <img src="../02-image/thor.jpg" class="card-img-top" alt="Thor">
+                        <div class="card-body">
+                            <h5 class="card-title">雷神</h5>
+                            <p class="card-text">
+                                雷神索爾（英語：Thor）是漫威漫畫旗下的一位超級英雄角色，最先出現於《神秘之旅》。雷神索爾的原形為北歐神話中的索爾，是「戰神」奧丁之子。他常成為好友鋼鐵人的對比，特顯了科學與神話的差別。
+                                索爾是奧丁與芙麗嘉之子，與奧丁所收養的冰霜巨人之子洛基一同長大成人，獲得了使用雷神之鎚的資格。他是阿斯嘉的守護者和繼承人。他的著名武器為 —
+                                Mjölnir，就是俗稱的「雷神之鎚」。在IGN的前100名的漫畫書英雄中排行第14，並在2012年的「50大復仇者」名單中排名第一。</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-12">
+                    <div class="card mb-3">
+                        <img src="../02-image/cap.jpg" class="card-img-top" alt="Captain">
+                        <div class="card-body">
+                            <h5 class="card-title">美國隊長</h5>
+                            <p class="card-text">美國隊長（英語：Captain America），本名為史蒂芬·羅傑斯（Steven
+                                Rogers），暱稱史蒂夫·羅傑斯（Steve Rogers），首次出現於《Captain AmericaComics》。
+                                美國隊長經常被視為美國精神的象徵，一開始只是作為為美國提升國家形象和宣傳的用途，1964年組成了漫威漫畫的英雄聯盟復仇者。
+                                在2011年，IGN的前100名漫畫書超級英雄中排行第6。2012年在「最偉大的五十名復仇者成員」中排名第二，2014年則在「前25名最佳漫威超級英雄名單」排名第二。
+                            </p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-12">
+                    <div class="card mb-3">
+                        <img src="../02-image/ho.jpg" class="card-img-top" alt="Hulk">
+                        <div class="card-body">
+                            <h5 class="card-title">浩克</h5>
+                            <p class="card-text">在一次實驗
+                                —『超級戰士』中，失敗並出了意外，布魯斯·班納為救同事而被伽瑪射線照射到身體，繼而產生異變，這導致他每當被激怒時，他的心率每分鐘超過200次，他就會變成綠色的巨人，並擁有無窮的力量，成為他的分身——浩克。剛變身的浩克把實驗室摧毀，並傷害或殺死裡面的人。軍方尤其是羅斯將軍，希望利用他的超能力成為武器，故到處捕捉他。布魯斯·班納刻意消聲匿跡。更為躲避他深愛的女友，切斷他以往生活中的任何關係，班納躲避羅斯將軍的追蹤，到遠處隱居之餘尋找解藥，過著如逃犯一般的生活。
+                            </p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-12">
+                    <div class="card mb-3">
+                        <img src="../02-image/na.jpg" class="card-img-top" alt="Black Widow">
+                        <div class="card-body">
+                            <h5 class="card-title">黑寡婦</h5>
+                            <p class="card-text">娜塔莉亞·愛麗安諾芙娜·羅曼諾娃，化名：娜塔莎·羅曼諾夫（英語：Natasha
+                                Romanoff，俄語：НаташаРоманофф），俗稱：黑寡婦（英語：BlackWidow；俄語：ЧёрнаяВдова)。黑寡婦的首次登場是作為「鋼鐵人」故事裡的一個常駐的非制服的俄羅斯間諜角色出現在(TalesofSuspense)中。黑寡婦為了她的事業招募了一名對她痴迷的制服射手，而他就是隨後成為超級英雄的「鷹眼」。在許多年後成為復仇者聯盟第16位正式成員之前，黑寡婦與復仇者聯盟的關係處於一種反覆搖擺的盟友關係。
+                            </p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-12">
+                    <div class="card mb-3">
+                        <img src="../02-image/eye.jpg" class="card-img-top" alt="Hawkeye">
+                        <div class="card-body">
+                            <h5 class="card-title">鷹眼</h5>
+                            <p class="card-text">鷹眼本名柯林頓·弗朗恩西斯·巴頓（英語：Clinton
+                                FrancisBarton），小名克林特（Clint），曾化名為歌利亞（Goliath）與浪人(漫威漫畫)（Ronin）並曾短暫扮演美國隊長。
+                                他原是個在馬戲團長大的孤兒，在某次演出被鋼鐵人奪去所有觀眾注意後決定也要成為超級英雄，擅長武術、箭術與冷兵器。
+                                他在漫威主世界中的首次出場是以反派身份出現在（TalesofSuspense），之後在（Avengers）被招募進入復仇者，從此成為最著名的復仇者成員之一。在2012年的IGN漫畫英雄人氣TOP100中，他排名第44位。
+                            </p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-3"></div>
+
+    <section class="infomation">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6"><img class="w-100" src="../02-image/na-02.jpg" alt=""></div>
+                <div class="col-12 col-md-6 text-justify">
+                    <h5>—— 黑寡婦 ——</h5>
+                    <p>影片的主體拍攝原計劃於2019年6月3日在英國開機，預計9月完成拍攝。
+                        2019年5月28日，據挪威當地報紙報道稱，史嘉蕾·喬韓森於當日出現在Vigra島上。29日起，影片於挪威默勒-魯姆斯達爾郡厄什塔塞伯村、翁達爾斯內斯等多地拍攝。6月，劇組移至英國白金漢克郡艾佛希斯的松林製片廠和匈牙利布達佩斯繼續拍攝，片場照顯示弗洛倫斯·佩治可能出演黑寡婦娜塔莎·羅曼諾娃的繼任者葉蓮娜·貝洛娃。同月，雷·溫斯頓加入劇組。7月，劇組返回倫敦拍攝。7月20日，漫威在聖地牙哥國際漫畫展上公布影片將於2020年5月1日在美國上映，同時正式確認選角，大衛·哈伯出演「紅色守衛者」阿列克謝·肖斯塔科夫，弗洛倫斯·佩治出演「黑寡婦」葉蓮娜·貝洛娃，O·T·費本勒出演里克·梅森，瑞秋·懷茲出演「黑寡婦」梅麗娜。8月，荷蘭健美選手奧利維爾·里希特斯確定加入劇組。9月，《DeadlineHollywood》報道稱小勞勃·道尼將在影片中客串出演「鋼鐵人」東尼·史塔克。
+                    </p>
+                </div>
+            </div>
+
+            <div class="py-3"></div>
+
+            <div class="row">
+                <div class="col-12 col-md-6 order-sm-0">
+                    <h5>—— 緋紅女巫 ——</h5>
+                    <p>飾演「緋紅女巫」的伊莉莎白歐森（ElizabethOlsen）進來在受訪時，證實（緋紅女巫x幻視）將會在秋天開拍，而目前演員都已經陸續準備就位，劇本也已經完成了，「我和「幻視」保羅貝特尼都很期待，也已經看過劇本了，知道故事將會如何發展，劇情真的很棒！我只能透露到這裡。」隨後有外媒透露，伊莉莎白歐森所說的秋天就是在9月21日，將會在美國洛杉磯開拍。事實上，伊莉莎白歐森先前在受訪時也曾被問及劇情細節，口風超緊的她僅透露，故事的劇情背景將會在1950年代，「我們一定會拍得很開心，一定也會很怪，而且會有更多深入的東西，也會有很多驚喜，而且我們終於可以真正地瞭解做為『緋紅女巫』的汪達馬克希莫夫了。」
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 order-sm-1"><img class="w-100" src="../02-image/wu.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="py-3"></div>
+
+    <footer>
+        <div class="footer-container">
+            <span>© Copyright 2008-2019.MARVEL (僅供教學練習用)</span>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+crossorigin="anonymous"></script>
+</body>
+
+</html>
