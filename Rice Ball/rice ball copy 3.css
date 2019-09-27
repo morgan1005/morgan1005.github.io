@@ -28,13 +28,13 @@ header{
     font-family: 'Noto Sans TC', sans-serif;
 }
 #maintop{
-    background-image: url("/img/010194709a81a0a7e115f89e0765aedb.jpg");
+    background-image: url("./img/010194709a81a0a7e115f89e0765aedb.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
 #mainbottom{
     background-color: rgb(212, 212, 212); 
-    background-image: url("/img/010194709a81a0a7e115f89e0765aedb.jpg");
+    background-image: url("./img/010194709a81a0a7e115f89e0765aedb.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -142,7 +142,7 @@ header{
     float: right;
 }
 #contactme{
-    background-image: url("/img/010194709a81a0a7e115f89e0765aedb.jpg");
+    background-image: url("./img/010194709a81a0a7e115f89e0765aedb.jpg");
     background-size: cover;
     background-attachment: fixed; 
 }
@@ -191,7 +191,7 @@ footer p{
     width: 100px;
 }
 .py-3{
-    background-image: url("/img/010194709a81a0a7e115f89e0765aedb.jpg");
+    background-image: url("./img/010194709a81a0a7e115f89e0765aedb.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
