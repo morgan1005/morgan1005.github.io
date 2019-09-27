@@ -1,0 +1,200 @@
+body{
+    margin: 0;
+    position: relative;
+}
+header{
+    background-color: rgb(255, 255, 255);    
+}
+.nav-img{
+    padding: 10px 0 ;
+    display: flex;
+    justify-content: center;
+}
+.nav-img .p01{
+    width: 160px;
+}
+.navbar{
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+}
+.navbar ul{
+    display: flex;
+    text-align: center;
+    line-height: 10px;
+}
+.nav-item{
+    list-style-type:none;
+    font-size: 8pt;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+#maintop{
+    background-image: url("/img/010194709a81a0a7e115f89e0765aedb.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+#mainbottom{
+    background-color: rgb(212, 212, 212); 
+    background-image: url("/img/010194709a81a0a7e115f89e0765aedb.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+#banner{
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0;
+    margin-bottom: 60px;
+}
+#banner img{
+    width: 70vw;
+    height: 20%;
+}
+#story{
+    position: relative;
+    padding-right: 200px;
+}
+#story #storyL{
+    width: 30vw;
+    height: 50vh;
+    position: absolute;
+    bottom: 0;
+    left: -100px;
+    z-index: 99;
+}
+#story #storyL img{
+    position: absolute;
+    bottom: 0;
+}
+#story #storyR{
+    width: 40%;
+    float: right;
+}
+#storyR span{
+    font-family: 'Mansalva','Indie Flower', cursive,'Noto Sans TC', sans-serif,;
+    font-size: 20px;
+    color: aliceblue;
+}
+#storyR p{
+    font-size: 10pt;
+    color: aliceblue;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.modal-color{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    pointer-events: auto;
+    background-color:rgb(255, 255, 255);
+    background-clip: padding-box;
+    border: 3px solid rgba(1, 57, 102, 0.2);
+    border-radius: .3rem;
+    outline: 0;
+    line-height: 5px;
+    margin: 200px auto;
+}
+#manu .box .card1 {
+    position: relative;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+}
+.card-body{
+    background-color: rgb(218, 216, 216);
+}
+.card-body .card-text{
+    text-align: center;
+    font-size: 12pt;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.box{
+    width: calc(20% - 30px);
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+#howtoprocess img{
+      width: 100%;
+}
+.row .col-4{
+    margin: auto;
+}
+.row .col-3{
+    margin: auto;
+}
+.leftbox{
+    color: aliceblue;
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;   
+    font-size: 20pt;
+}
+.rightbox{
+    color: aliceblue;
+    font-size: 13pt;
+    float: right;
+}
+#contactme{
+    background-image: url("/img/010194709a81a0a7e115f89e0765aedb.jpg");
+    background-size: cover;
+    background-attachment: fixed; 
+}
+#contactme .collbox ul{
+    list-style-type:none;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+#contactme .collbox ul li img{
+    transition: 1.5s;
+    margin: auto;
+}
+#contactme .collbox ul li img:hover{
+    width: 50px;
+    height: 50px;
+    transform: rotate(180deg);
+}
+footer{
+    background-color:rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Mansalva','Indie Flower', cursive;
+}
+#footer{
+    padding: 5px 0;
+}
+#footer img{
+    width: 30px;
+    margin:0 10px;
+}
+footer p{
+    margin: 0;
+    color: aliceblue;
+}
+#top{
+    border-radius: 50px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: 1090;
+}
+#footer #top img{
+    width: 100px;
+}
+.py-3{
+    background-image: url("/img/010194709a81a0a7e115f89e0765aedb.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.collbox ul{
+    margin: 0;
+}
